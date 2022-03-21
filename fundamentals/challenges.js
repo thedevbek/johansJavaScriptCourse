@@ -94,28 +94,28 @@ if (dolphinScore2 > koalasScore2 && scoreMust) {
 
 let day = 'Sunday';
 
-// switch (day) {
-// 	case 'Monday': //day === 'Monday'
-// 		console.log(`Plan course structure.`);
-// 		console.log(`Go to coding meetup`);
-// 		break;
-// 	case 'Tuesday':
-// 		console.log(`Prepare theory videos.`);
-// 		break;
-// 	case 'Wednesday':
-// 	case 'Thursday':
-// 		console.log(`Write code examples.`);
-// 		break;
-// 	case 'Friday':
-// 		console.log(`Record videos.`);
-// 		break;
-// 	case 'Saturday':
-// 	case 'Sunday':
-// 		console.log(`Engjoy the weekend :D!`);
-// 		break;
-// 	default:
-// 		console.log(`Not Valid!`);
-// }
+switch (day) {
+	case 'Monday': //day === 'Monday'
+		console.log(`Plan course structure.`);
+		console.log(`Go to coding meetup`);
+		break;
+	case 'Tuesday':
+		console.log(`Prepare theory videos.`);
+		break;
+	case 'Wednesday':
+	case 'Thursday':
+		console.log(`Write code examples.`);
+		break;
+	case 'Friday':
+		console.log(`Record videos.`);
+		break;
+	case 'Saturday':
+	case 'Sunday':
+		console.log(`Engjoy the weekend :D!`);
+		break;
+	default:
+		console.log(`Not Valid!`);
+}
 
 //!! Make the above switch into a if else statement!
 
