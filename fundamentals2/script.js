@@ -67,3 +67,67 @@ function fruitProcessor2(apples, oranges) {
 	return juice;
 }
 console.log(fruitProcessor2(2, 3));
+
+// % Arrays
+// # Arrays are like big containers that we can throw things in an later reference them.
+
+const friends = ['Michael', 'Steven', 'Peter'];
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years);
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends.length - 1);
+friends[2] = 'Bek';
+console.log(friends);
+
+const jonas = ['Jonas', 'Smith', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+
+// @ excerises
+const calcAge = function (birthYear) {
+	return 2037 - birthYear;
+};
+const years2 = [1990, 1967, 2002, 2010, 2018, 1972];
+const age4 = calcAge(years[0]);
+const age5 = calcAge(years[1]);
+const age6 = calcAge(years[years.length - 1]);
+console.log(age4, age5, age6);
+
+const ages = [
+	calcAge(years[0]),
+	calcAge(years[1]),
+	calcAge(years[years.length - 1]),
+];
+console.log(ages);
+
+//$ doesn't work cause we can't do operations with arrays
+console.log(calcAge(years2));
+console.log(years + 10);
+
+// % Array methods like push, pop, unshift, shift and ect are like operations
+
+const friends2 = ['Michael', 'Steven', 'Peter'];
+
+// # push and unshift ADDS elements
+const newLength = friends2.push('Bek');
+console.log(friends2);
+console.log(newLength);
+friends2.unshift('John');
+console.log(friends2);
+
+// # pop and shift REMOVES elements
+friends2.pop();
+console.log(friends2);
+friends2.shift();
+console.log(friends2);
+console.log(friends2.indexOf('Steven'));
+console.log(friends2.indexOf('Bob'));
+console.log(friends2.includes('Steven'));
+console.log(friends2.includes('Bob'));
+
+// % Most used case of the .includes  is below //
+
+if (friends2.includes('Steven')) {
+	console.log(`You have a friend called Steven`);
+}

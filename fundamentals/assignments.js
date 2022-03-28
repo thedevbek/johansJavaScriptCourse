@@ -169,8 +169,6 @@ function describePopulation(country, population) {
 }
 console.log(describePopulation('America', 330));
 
-// @ Intro to Arrays
-
 const calcAge = function (birthYear) {
 	return 2022 - birthYear;
 };
@@ -195,12 +193,12 @@ console.log(percentages.length);
 const worldPercentage = (population) => ((population / 7900) * 100).toFixed(2);
 
 const populationPercentageUSA = worldPercentage(percentages[0]);
-const populationPercentageUK = worldPercentage(percentages[1]);
-const populationPercentageSpain = worldPercentage(percentages[2]);
-const populationPercentageUkraine = worldPercentage(percentages[3]);
 console.log(populationPercentageUSA);
+const populationPercentageUK = worldPercentage(percentages[1]);
 console.log(populationPercentageUK);
+const populationPercentageSpain = worldPercentage(percentages[2]);
 console.log(populationPercentageSpain);
+const populationPercentageUkraine = worldPercentage(percentages[3]);
 console.log(populationPercentageUkraine);
 
 const neighbours = [

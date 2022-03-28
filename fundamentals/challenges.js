@@ -134,26 +134,26 @@ if (day == 'Monday') {
 	console.log(`Not Valid!`);
 }
 
-// $ Coding Challenge #4
+// ! Coding Challenge #4
 
-// let bill = 250;
-// let tip = bill * 0.15;
+let bill = 250;
+let tip = bill * 0.15;
 
-// let total = bill + tip;
+let total = bill + tip;
 
-// finalBill =
-// 	total >= 50 && total <= 300
-// 		? `The final bill was ${bill}, the tip was ${tip}, and the total is ${
-// 				bill + tip
-// 		  }`
-// 		: `No tip added to bill.`;
-// console.log(finalBill);
+finalBill =
+	total >= 50 && total <= 300
+		? `The final bill was ${bill}, the tip was ${tip}, and the total is ${
+				bill + tip
+		  }`
+		: `No tip added to bill.`;
+console.log(finalBill);
 
-const bill = 40;
-const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+const bill2 = 40;
+let tip2 = bill2 <= 300 && bill2 >= 50 ? bill2 * 0.15 : bill2 * 0.2;
 console.log(
-	`The final bill was ${bill}, the tip was ${tip}, and the total is ${
-		bill + tip
+	`The final bill was ${bill2}, the tip was ${tip2}, and the total is ${
+		bill2 + tip2
 	}`
 );
 
@@ -174,33 +174,12 @@ const age = 3;
 const drinkingAge = age >= 18 ? 'You can drink!' : 'Nope!';
 console.log(drinkingAge);
 
-// * Or write it like this
-// age2 = 21;
-// age2 >= 21 ? console.log('You can drink!') : console.log('Nope!');
-// ************************************
-
+// ! Or write it like this
+//! age2 = 21;
+//! age2 >= 21 ? console.log('You can drink!') : console.log('Nope!');
+//! ************************************
 const calcAge3 = (birthYear) => 2037 - birthYear;
 const age1 = calcAge3(1972);
 const age2 = calcAge3(1982);
 const age3 = calcAge3(1992);
 console.log(age1, age2, age3);
-
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
-const avgDolphins1 = calcAverage(44, 23, 71);
-const avgDolphins2 = calcAverage(85, 54, 41);
-const avgKoalas1 = calcAverage(65, 54, 49);
-const avgKoalas2 = calcAverage(23, 34, 27);
-console.log(avgDolphins1);
-console.log(avgDolphins2);
-console.log(avgKoalas1);
-console.log(avgKoalas2);
-
-function checkWinner(avgDolphins1, avgKoalas1) {
-	if (avgDolphins1 >= 2 * avgKoalas1) {
-		console.log(`Dolphins win! ${avgDolphins1} vs ${avgKoalas1}`);
-	} else if (avgKoalas1 >= 2 * avgDolphins1) {
-		console.log(`Koalas win! ${avgKoalas1} vs ${avgDolphins1}`);
-	} else console.log(`No Winner!!`);
-}
-checkWinner(avgDolphins2, avgKoalas2);
-checkWinner(avgDolphins1, avgKoalas1);
