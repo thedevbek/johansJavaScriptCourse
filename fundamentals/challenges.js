@@ -42,7 +42,7 @@ highestBMI =
 		: `John's BMI (${johnBMI.toFixed()}) is higher than Mark's (${markBMI.toFixed()})!`;
 console.log(highestBMI);
 
-//* Challenge 3
+//! Challenge 3
 
 let dolphinScore = (96 + 108 + 89) / 3;
 console.log(dolphinScore.toFixed());
@@ -175,6 +175,32 @@ const drinkingAge = age >= 18 ? 'You can drink!' : 'Nope!';
 console.log(drinkingAge);
 
 // * Or write it like this
-age2 = 21;
-age2 >= 21 ? console.log('You can drink!') : console.log('Nope!');
+// age2 = 21;
+// age2 >= 21 ? console.log('You can drink!') : console.log('Nope!');
 // ************************************
+
+const calcAge3 = (birthYear) => 2037 - birthYear;
+const age1 = calcAge3(1972);
+const age2 = calcAge3(1982);
+const age3 = calcAge3(1992);
+console.log(age1, age2, age3);
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+const avgDolphins1 = calcAverage(44, 23, 71);
+const avgDolphins2 = calcAverage(85, 54, 41);
+const avgKoalas1 = calcAverage(65, 54, 49);
+const avgKoalas2 = calcAverage(23, 34, 27);
+console.log(avgDolphins1);
+console.log(avgDolphins2);
+console.log(avgKoalas1);
+console.log(avgKoalas2);
+
+function checkWinner(avgDolphins1, avgKoalas1) {
+	if (avgDolphins1 >= 2 * avgKoalas1) {
+		console.log(`Dolphins win! ${avgDolphins1} vs ${avgKoalas1}`);
+	} else if (avgKoalas1 >= 2 * avgDolphins1) {
+		console.log(`Koalas win! ${avgKoalas1} vs ${avgDolphins1}`);
+	} else console.log(`No Winner!!`);
+}
+checkWinner(avgDolphins2, avgKoalas2);
+checkWinner(avgDolphins1, avgKoalas1);

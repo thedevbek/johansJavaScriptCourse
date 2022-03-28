@@ -156,9 +156,9 @@ console.log(countryPercentage3);
 
 // @ ==> Function
 
-const worldPercentage = (population) => ((population / 7900) * 100).toFixed(2);
-const countryWorldPercentage = worldPercentage(68); //! UK
-console.log(countryWorldPercentage);
+// const worldPercentage = (population) => ((population / 7900) * 100).toFixed(2);
+// const countryWorldPercentage = worldPercentage(68); //! UK
+// console.log(countryWorldPercentage);
 
 // @ Functions Calling Other Functions
 
@@ -168,3 +168,55 @@ function describePopulation(country, population) {
 	return pop;
 }
 console.log(describePopulation('America', 330));
+
+// @ Intro to Arrays
+
+const calcAge = function (birthYear) {
+	return 2022 - birthYear;
+};
+
+const years = [1972, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+	calcAge(years[0]),
+	calcAge(years[1]),
+	calcAge(years[years.length - 1]),
+];
+console.log(ages);
+//USA 330, UK, 68, Spain 66, Ukraine 41
+const percentages = [330, 68, 66, 41];
+console.log(percentages.length);
+
+const worldPercentage = (population) => ((population / 7900) * 100).toFixed(2);
+
+const populationPercentageUSA = worldPercentage(percentages[0]);
+const populationPercentageUK = worldPercentage(percentages[1]);
+const populationPercentageSpain = worldPercentage(percentages[2]);
+const populationPercentageUkraine = worldPercentage(percentages[3]);
+console.log(populationPercentageUSA);
+console.log(populationPercentageUK);
+console.log(populationPercentageSpain);
+console.log(populationPercentageUkraine);
+
+const neighbours = [
+	'India',
+	'Bangladesh',
+	'Bhutan',
+	'Nepal',
+	'Pakistan',
+	'Sri Lanka',
+];
+
+neighbours.push('Utopia');
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+neighbours.includes('Germany');
+console.log(neighbours.includes('Germany'));
+neighbours[neighbours.indexOf('Bangladesh')] = 'Republic of Sweden';
+console.log(neighbours);
