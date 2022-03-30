@@ -23,15 +23,17 @@ checkWinner(avgDolphins1, avgKoalas1);
 
 // !Coding Challenge #2
 
-function calcTip(total) {
-	const tip = total <= 300 && total >= 50 ? total * 0.15 : total * 0.2;
-	return tip + total;
+function calcTip(bill) {
+	const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+	return tip;
 }
-const totalWithTip = calcTip(500);
+const totalWithTip = calcTip(100);
 console.log(totalWithTip);
 
-const calcAge = (birthYear) => 2037 - birthYear;
-const age1 = calcAge(1972);
-const age2 = calcAge(1982);
-const age3 = calcAge(1992);
-console.log(age1, age2, age3);
+const bills = [125, 555, 44];
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips);
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(totals);
