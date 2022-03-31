@@ -160,7 +160,7 @@ console.log(countryPercentage3);
 // const countryWorldPercentage = worldPercentage(68); //! UK
 // console.log(countryWorldPercentage);
 
-// @ Functions Calling Other Functions
+// % Functions Calling Other Functions
 
 function describePopulation(country, population) {
 	percentPop = percentageOfWorld1(330);
@@ -168,6 +168,8 @@ function describePopulation(country, population) {
 	return pop;
 }
 console.log(describePopulation('America', 330));
+
+// % Arrays
 
 const calcAge = function (birthYear) {
 	return 2022 - birthYear;
@@ -218,3 +220,37 @@ neighbours.includes('Germany');
 console.log(neighbours.includes('Germany'));
 neighbours[neighbours.indexOf('Bangladesh')] = 'Republic of Sweden';
 console.log(neighbours);
+
+// % Objects
+
+const myCountry = {
+	country: 'United States',
+	capital: 'Washington DC',
+	language: 'English',
+	languagePopulation: 231,
+	population: 330,
+	neighbours: ['Canada', 'Mexico'],
+	checkIsland: false,
+
+	describe: function () {
+		return `The ${this.country} has ${
+			this.languagePopulation
+		}-speaking people, ${
+			this.neighbours.length
+		} neighbouring countries and a capital called ${this.capital} and ${
+			this.checkIsland ? 'is' : 'is not'
+		} an island.`;
+	},
+};
+
+console.log(myCountry.describe());
+
+console.log(
+	`The ${myCountry.country} has ${myCountry.languagePopulation} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+);
+
+myCountry.population = 332;
+console.log(myCountry.population);
+
+myCountry[population] = 332 - 2;
+console.log(myCountry[population]);
