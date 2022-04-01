@@ -63,6 +63,7 @@ const john = {
 		return this.bmi;
 	},
 };
+
 mark.calcBMI();
 john.calcBMI();
 console.log(john.bmi.toFixed(1), mark.bmi.toFixed(1));
