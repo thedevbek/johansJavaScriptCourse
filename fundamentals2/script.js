@@ -287,16 +287,16 @@ const friends2 = ['Michael', 'Steven', 'Peter'];
 
 //@ while loop
 
-// for (let rep = 1; rep <= 10; rep++) {
-// 	console.log(`Lifting weights repetition ${rep} 🏋🏻`);
-// }
+for (let rep = 1; rep <= 10; rep++) {
+	console.log(`Lifting weights repetition ${rep} 🏋🏻`);
+}
 
-// let rep = 1;
-// while (rep <= 10) {
-// 	//while (condition is true keep running until condition is false)
-// 	console.log(`WHILE: Lifting weights repetition ${rep} 🏋🏻`);
-// 	rep++;
-// }
+let rep = 1;
+while (rep <= 10) {
+	//while (condition is true keep running until condition is false)
+	console.log(`WHILE: Lifting weights repetition ${rep} 🏋🏻`);
+	rep++;
+}
 
 let dice = Math.trunc(Math.random() * 6) + 1;
 
@@ -305,3 +305,8 @@ while (dice !== 6) {
 	dice = Math.trunc(Math.random() * 6) + 1;
 	if (dice === 6) console.log(`Loop is about to end...`);
 }
+
+function toFahrenheit(c) {
+	console.log(c * 1.8 + 32);
+}
+toFahrenheit(0);
